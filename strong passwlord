@@ -1,0 +1,20 @@
+pass1=input()
+l=0
+u=0
+d=0
+s=0
+if (len(pass1)>7):
+    for i in pass1:
+        if (i.islower()):
+            l=l+1
+        elif(i.isupper()):
+            u=u+1
+        elif(i.isdigit()):
+            d=d+1
+        elif(not i.isalnum()):
+            s=s+1
+if (l>0 or u>0 or d>0 or s>0):
+    print ("strong")
+else:
+    print("weak")
+        
