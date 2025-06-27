@@ -1,0 +1,13 @@
+class person:
+    com="aws"
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print("Name:",self.name)
+        print("age:",self.age)
+        print("company:",person.com)
+s1=person("Popinez",21)
+s=person("kaan",20)
+s.display()
+s1.display()
