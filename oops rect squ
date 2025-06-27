@@ -1,0 +1,21 @@
+class Rec ():
+    def set_dim(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        return self.length*self.breadth
+        
+l=[]
+ch=int(input("Enter the number of rectangle:"))
+for i in range(ch):
+    r=Rec()
+    length=int(input("Enter the length :"))
+    breadth=int(input("Enter the breadth:"))
+    r.set_dim(length,breadth)
+    l.append(r)
+print("------------------")
+pos=1
+for i in l:
+    print("The area of rectangle {}".format(pos))
+    pos=pos+1
+    print("The aera is",i.area())
